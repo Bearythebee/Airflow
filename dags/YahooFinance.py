@@ -37,7 +37,7 @@ def get_stock_data(**kwargs):
                 json.dump(data, outfile)
 
 dag = DAG('pull_data',
-         schedule_interval=None#'@daily',
+         schedule_interval=None,#'@daily',
          default_args=default_args,
          catchup=False)
 
